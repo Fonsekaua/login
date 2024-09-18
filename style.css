@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#title {
+    display: none;
+}
+
+form {
+    position: fixed;
+    padding: 25px;
+    border-radius: 30px;
+    top: 50%;
+    left: 50%;
+    box-shadow: 1px 1px 2px 2px rgb(133, 133, 133);
+    transform: translate(-50%, -50%);
+    width: 250px;
+    transition: 0.2s all ease-in-out;
+}
+
+
+
+form h1 {
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+input,
+label,
+button {
+    position: relative;
+    max-width: 100%;
+    padding: 10px;
+    margin-right: 20px;
+    margin-top: 1px;
+    width: 210px;
+    display: block;
+    outline: none;
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+button {
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    background-color: rgb(0, 119, 255);
+    color: aliceblue;
+}
+
+input::placeholder {
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 414px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    form {
+        width: 340px;
+        padding: 3px;
+        font-size: 20px;
+    }
+
+    label,
+    input,
+    button {
+        width: 280px;
+        padding: 13px;
+    }
+
+    input::placeholder {
+        font-size: 19px;
+    }
+
+    input::placeholder {
+        font-size: 19px;
+    }
+
+    button {
+        width: 280px;
+
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    form {
+        width: 340px;
+        padding: 8px;
+        font-size: 25px;
+    }
+
+    label,
+    input,
+    button {
+        width: 280px;
+        padding: 13px;
+    }
+
+    input::placeholder {
+        font-size: 19px;
+    }
+
+    input {
+        font-size: 19px;
+    }
+
+    button {
+        width: 280px;
+
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    h1 {
+        margin: 0;
+    }
+
+    form {
+        width: 250px;
+        height: 350px;
+        font-size: 19px;
+        padding: 30px;
+    }
+
+
+
+    label,
+    input,
+    button {
+        margin: 0px;
+        padding: 10px;
+        width: 220px;
+
+    }
+
+    input {
+        font-size: 19px;
+    }
+
+    button {
+        width: 210px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    form {
+        display: none;
+    }
+
+    #title {
+        display: block;
+    }
+}
